@@ -1,0 +1,42 @@
+svg {
+    width: 90vw;
+    height: 1000px;
+    #background-color: #FFF;
+}
+
+.white-key {
+    fill: white;
+    stroke: black;
+    stroke-width: 4px;
+}
+
+.black-key {
+    fill: black;
+    stroke: black;
+    stroke-width: 4px;
+}
+
+rect:hover {
+    fill: lightblue;
+}
+
+rect.selected {
+    fill: lightblue;
+}
+
+text {
+    font-size: 40pt;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    fill: transparent;
+    display: none;
+}
+
+text.selected {
+    fill: black;
+    display: block;
+}
+
+.black-key-text {
+    font-size: 32pt;
+}

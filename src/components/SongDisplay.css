@@ -1,0 +1,43 @@
+p {
+    font-family: monospace;
+}
+
+.barLine {
+    #stroke:rgb(200,200,200);
+    stroke:rgb(80,80,80);
+    stroke-width:1;
+}
+
+.measureLine {
+    stroke:rgb(80,80,80);
+    stroke-width:1;
+}
+
+svg {
+    width: 90vw;
+    height: 1000px;
+    #background-color: #FFF;
+}
+
+text {
+    font-size: 14pt;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    fill: rgb(255,255,255);
+}
+
+.chord {
+    fill: rgb(103, 103, 103);
+}
+
+.third {
+    fill: rgb(196, 46, 46);
+}
+
+.septant {
+    fill: rgb(99, 99, 255);
+}
+
+.extra {
+    fill: rgb(170,170,170);
+}
