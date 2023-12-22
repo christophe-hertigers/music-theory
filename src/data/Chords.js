@@ -13,6 +13,8 @@ export const extraNotes = {
     "E7":     { "nine": 'F' },
     "F#7":    { "nine": 'G' },
     "D-7":    { "thirtheen": 'B' },
+    "F#7alt":    { "nine": 'A' },
+    "B7alt":    { "nine": 'D' },
 }
 
 const getRoot = (chord) => {
@@ -45,6 +47,13 @@ const getInterval = (root, interval) => {
 }
 
 const types = {
+    'DOMINANT-SHARP-5': {
+        name: 'DOMINANT-SHARP-5',
+        suffix: '7#5',
+        getNotes: root => {
+            return getInterval(root, [0, 4, 8, 10]);
+        },
+    },
     'DOMINANT': {
         name: 'DOMINANT',
         suffix: '7',

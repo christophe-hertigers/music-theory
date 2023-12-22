@@ -5,6 +5,7 @@ import SongDisplay from "./components/SongDisplay";
 import PianoDisplay from "./components/PianoDisplay";
 import {SONGS} from "./data/Songs";
 import {useEventListener} from "./effects/useEventListener";
+import ChordDisplay from "./components/ChordDisplay";
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
     const displayApp = () => {
         if (app === 'songDisplay') {
             return <SongDisplay song={selectedSong}/>;
+        } else if (app === 'chordDisplay') {
+            return <ChordDisplay/>
         } else {
             return <PianoDisplay/>;
         }
@@ -36,6 +39,7 @@ function App() {
 
     const toggleApp = () => {
         if (app === 'songDisplay') setApp('pianoDisplay');
+        else if (app === 'pianoDisplay') setApp('chordDisplay');
         else setApp('songDisplay');
     }
 
